@@ -8,7 +8,12 @@ if cislo > 0:
     print("kladné")
 elif cislo < 0:
     print("záporné")
-else:
+else: 
     print("nula")
+
+if cislo <0:
+    print("absolutní hodnota je: " + str(cislo * -1))
+if cislo >0:
+    print("absolutní hodnota je: " + str(cislo))
 
 print ("------------------------------------------------------------------------------")
