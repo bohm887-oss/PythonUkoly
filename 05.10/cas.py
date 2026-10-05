@@ -1,7 +1,7 @@
 # Program, který podle zadané hodiny vypíše vhodný pozdrav.
 
 try:
-	hodina = float(input("Zadejte hodinu (např. 8, 12.5, 21.5): "))
+	hodina = float(input("Zadejte aktuální hodinu (0-23): "))
 
 	# 1. Kontrola záporného čísla
 	if hodina < 0:
@@ -9,7 +9,7 @@ try:
 
 	# 2. Kontrola horní hranice
 	elif hodina >= 24:
-		print("Zadávejte platné hodiny.")
+		print("Zadávejte platné hodiny, které se nacházejí v rozmezí 0-23.")
 
 	# 3. Určení pozdravu podle denního času
 	elif 5 <= hodina < 9:
@@ -26,4 +26,4 @@ try:
 		print("Dobrou noc.")
 
 except ValueError:
-	print("Zadejte platné číslo.")
+	print("Zadejte platné číslo. 1:00 - 23:59")
