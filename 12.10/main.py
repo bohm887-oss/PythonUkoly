@@ -10,7 +10,7 @@ def spocti_vstupne():
 
     # Základní cena jedné vstupenky
     zakladni_cena = 500
-    
+
     # Rozhodovací logika pro slevy
     if pocet_osob >= 4:
         nazev_slevy = "Skupinová sleva (25 %)"
@@ -33,3 +33,7 @@ def spocti_vstupne():
     print(f"Typ slevy: {nazev_slevy}")
     print(f"Cena za jednu vstupenku po slevě: {cena_za_jednu:.0f} Kč")
     print(f"Celková cena za všechny vstupenky: {celkova_cena:.0f} Kč")
+
+
+if __name__ == "__main__":
+    spocti_vstupne()
